@@ -29,8 +29,25 @@ El documento Markdown deberá contener el proceso técnico que el participante h
 
 ![image](https://user-images.githubusercontent.com/108036239/175609765-28faee4f-7110-4428-878a-78a493127f8b.png)
 
-# EJECUCION
+## EJECUCION
 
 Para el desarrollo y ejecución de lo solicitado se procede de la siguiente manera.
 
-## 1) 
+### 1) Ingresar a Microsoft Azure
+
+Con la cuenta y password se ingresa al portal de Azure
+
+![image](https://user-images.githubusercontent.com/108036239/175611085-e1c07681-092e-458b-adba-59921b2d8d44.png)
+
+### 2) Ingresar a Synapse Analitics
+
+En los recursos asignados ingresarse a synapsecapacitacion
+
+![image](https://user-images.githubusercontent.com/108036239/175611437-b38a2e66-ac4d-4e48-82fe-dc5d1e44a758.png)
+
+
+
+
+
+
+
