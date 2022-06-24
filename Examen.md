@@ -177,7 +177,7 @@ Este proceso nos sirve para validar las tablas solicitadas como parte del modelo
 
 Codigo Consulta para traer las tablas 
 
-```ruby
+```sql
 select 
 table_name as tabla
 from information_schema. tables
