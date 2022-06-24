@@ -257,26 +257,94 @@ df.write.mode("overwrite").parquet(VpathEmail)
 
 ![image](https://user-images.githubusercontent.com/108036239/175744786-df48a647-8251-48d3-af79-96d910088d0a.png)
 
+![image](https://user-images.githubusercontent.com/108036239/175746839-db19d3b9-d1c5-4159-bb35-c392fb191b8b.png)
+
+Se ejecuto el siguiente proceso:
+
+1) Se asigna las rutas a variables
+
+
+```python
+%%pyspark
+from pyspark.sql import functions as F, Window
+from pyspark.sql.functions import explode
+
+## RutaArchivos
+
+VPath_Cli = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/jchicaiza/cliente.parquet'
+VPath_Fact = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw//jchicaiza/factura.parquet'
+VPath_FactProd = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/jchicaiza/facturaproducto.parquet'
+VPath_Prod = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/jchicaiza/producto.parquet'
+VPath_Email = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/jchicaiza/email.parquet'
+```
+2) Se asigna a DataFrames para traer los datos de los archivos Parquet
+
+```python
+## Asignar a DataFrames
+
+
+dfCliente = spark.read.load(VPath_Cli, format='parquet')
+dfFactura = spark.read.load(VPath_Fact, format='parquet')
+dfFactProd = spark.read.load(VPath_FactProd, format='parquet')
+dfProducto = spark.read.load(VPath_Prod, format='parquet')
+dfEmail = spark.read.load(VPath_Email, format='parquet')
+```
+3) Se crean Tablas Temporales
+
+
+```python
+## Creación de Tablas Temporales para ejecutar la seleccción final
+
+
+##Tablas Temporales##
+dfCliente.createOrReplaceTempView("tbl_Cliente_JCH")
+dfFactura.createOrReplaceTempView("tbl_Factura_JCH")
+dfFactProd.createOrReplaceTempView("tbl_FacturaProducto_JCH")
+dfProducto.createOrReplaceTempView("tbl_Producto_JCH")
+dfEmail.createOrReplaceTempView("tbl_Email_JCH")
+```
+
+4) Se crea el Script SQL para la creación de la tabla Final
 
 
 
+```python
+##SQL
+vSQL="""
+SELECT cli.rowidcliente,fp.producto,mail.email,count(producto) as cantidad,max(fp.fecha) as fechacompra
+from tbl_Cliente_JCH cli
+INNER JOIN tbl_Factura_JCH fac ON cli.rowidcliente = fac.rowidcliente
+INNER JOIN tbl_FacturaProducto_JCh fp ON fac.rowidfactura = fp.rowidfactura
+INNER JOIN tbl_Email_JCH mail ON cli.rowidcliente = mail.rowidcliente
+group by cli.rowidcliente,fp.producto,mail.email
 
+order by 1
+"""
+dfResultado=spark.sql(vSQL)
 
+dfResultado.createOrReplaceTempView("tbl_Resultado_JCH")
 
+display(dfResultado.limit(100))
 
+VSQL1 ="""
+select rowidcliente,max(cantidad) as cantidad from tbl_Resultado_JCH
+group by rowidcliente
+"""
 
+dfMaxCant= spark.sql(VSQL1)
+##display(dfMaxCant.limit(100))
+dfMaxCant.createOrReplaceTempView("tbl_MaxCant_JCH")
 
+VSQL2 ="""
+select res.rowidcliente,res.producto,res.fechacompra,res.email
+from tbl_Resultado_JCH res
+INNER JOIN tbl_MaxCant_JCH mc ON mc.rowidcliente = res.rowidcliente and mc.cantidad = res.cantidad
 
+"""
 
+dfResFinal =spark.sql(VSQL2)
+display(dfResFinal.limit(1000))
 
-
-
-
-
-
-
-
-
-
-
-
+##Consumo
+dfResFinal.write.mode("overwrite").saveAsTable("default.tbl_jchicaiza_resfinal")
+```
