@@ -75,7 +75,30 @@ e) Hacemos la prueba de la conexión
 
 ![image](https://user-images.githubusercontent.com/108036239/175616383-d301bd21-c9e3-4100-819a-102d2f7ce2a3.png)
 
-### 5) Creación Data Source Origen
+### 5) Creación Data Lake Storage
+
+Para crear un Servicio Vinculado ejecutamos los siguientes pasos:
+
+a) Conexiones Externas
+b) Servicios Vinculados
+c) Nuevo
+
+![image](https://user-images.githubusercontent.com/108036239/175614845-f501d9c9-17f5-405f-9be2-497e17c8cd40.png)
+
+d) Escogemos Azure Data Lake Storage Gen2
+
+![image](https://user-images.githubusercontent.com/108036239/175644478-17574c75-4a55-4c40-ad76-32b0080fe93b.png)
+
+e) En este caso vamos a utilizar uno previamente creado en el curso.
+
+![image](https://user-images.githubusercontent.com/108036239/175644587-d605dc1d-3c77-48c2-baac-62a18c962306.png)
+
+f) Probamos conexión.
+
+![image](https://user-images.githubusercontent.com/108036239/175644660-52ef7df6-7ff7-4675-8144-4163d230cbee.png)
+
+
+
 
 
 
