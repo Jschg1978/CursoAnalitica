@@ -101,7 +101,7 @@ f) Probamos conexión.
 
 a) Escogemos la opción datos
 
-b) Viculado
+b) Vinculado
 
 c) Conjunto de datos de integración 
 
@@ -116,6 +116,34 @@ d) En este caso utilizaremos una creada previamente en el curso (SourceDataset_x
 ![image](https://user-images.githubusercontent.com/108036239/175697875-191f1850-4362-4a3f-8447-72c2978d3c15.png)
 
 ![image](https://user-images.githubusercontent.com/108036239/175697924-1b56b120-7e64-4149-a95b-2ac20d12eeeb.png)
+
+### 7) Creación Destino de Datos
+
+
+a) Escogemos la opción datos
+
+b) Vinculado
+
+c) Conjunto de datos de integración 
+
+![image](https://user-images.githubusercontent.com/108036239/175666002-0ae49f8d-1182-428d-8adb-3a4c379407b7.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175698823-fb711b5a-d390-44f8-899f-85ee76129a90.png)
+
+d) Seleccionamos el formato
+
+![image](https://user-images.githubusercontent.com/108036239/175698893-a72bd8c2-c8cd-46b7-834c-a87c6d3c8c2a.png)
+
+e) Configuramos 
+
+![image](https://user-images.githubusercontent.com/108036239/175699013-213f26e6-5c5e-4068-a398-3888a7f9ef34.png)
+
+f) En este caso utilizaremos una creada previamente en el curso (DestinationDataset_xer) 
+
+![image](https://user-images.githubusercontent.com/108036239/175699343-a35894c1-ca59-4ed3-ab08-1d038889008d.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175699286-d23ecff0-86a6-4b53-9009-1156433757b5.png)
+
 
 
 
