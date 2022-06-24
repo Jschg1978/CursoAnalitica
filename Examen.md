@@ -161,7 +161,34 @@ c) En la solución planteada se incluye lo siguiente :
 
 ![image](https://user-images.githubusercontent.com/108036239/175719692-1f887985-f9f5-4f28-b362-4867ede6d65a.png)
 
-    ### Busqueda
+### Busqueda
+
+![image](https://user-images.githubusercontent.com/108036239/175720001-6f32322c-3cfd-4556-bec1-b897500c5d6c.png)
+
+Se parametriza la pestañas General y Configuración
+
+![image](https://user-images.githubusercontent.com/108036239/175720083-63c7c8f1-90d4-4271-902b-5a359a28948e.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175720451-08280474-ec3f-4c89-9f92-c25bbb2f23ed.png)
+
+Este proceso nos sirve para validar las tablas solicitadas como parte del modelo
+
+![image](https://user-images.githubusercontent.com/108036239/175720587-432896bb-8861-46d6-9170-d4eafcd7f4e1.png)
+
+Codigo Consulta para traer las tablas 
+
+```ruby
+select 
+table_name as tabla
+from information_schema. tables
+where
+table_schema = 'dwh'
+and table_name in('cliente','factura','facturaproducto','producto')
+```
+
+
+   
+   
 
 
 
