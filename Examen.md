@@ -194,9 +194,17 @@ Se parametriza la pestaña configuración
 
 ![image](https://user-images.githubusercontent.com/108036239/175721133-d77adf7e-c873-44cc-902e-36ed03f0ac4b.png)
 
-Dentro del ForEach incluimos la activdad Copiar datos
+Dentro del ForEach incluimos la actividad Copiar datos la misma nos sirve para tomar las tablas de un origen y copiar en un destino.
 
 ![image](https://user-images.githubusercontent.com/108036239/175721192-6c5256cf-2ee1-4694-8e5e-79056e4410b3.png)
+
+Se parametriza el origen y destino de acuerdo creados en el apartado 6 y7 
+
+![image](https://user-images.githubusercontent.com/108036239/175721464-8b1547ec-b4c7-4f30-a2c1-5078a08a5853.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175721488-d13b6897-c1ba-4505-adf7-674fb2c74a4d.png)
+
+
 
 
 
