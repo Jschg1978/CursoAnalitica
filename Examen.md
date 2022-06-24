@@ -354,3 +354,8 @@ dfResFinal.write.mode("overwrite").saveAsTable("default.tbl_jchicaiza_resfinal")
 
 
 ![image](https://user-images.githubusercontent.com/108036239/175749070-e11bec1b-f84d-4008-ad5f-32b4e71412e6.png)
+
+## 9) Ejecución Pipeline (Paso a Producción)
+
+![image](https://user-images.githubusercontent.com/108036239/175749327-0ec0502d-5a5d-48b9-b079-b82342735ecc.png)
+
