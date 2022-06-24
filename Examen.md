@@ -29,29 +29,29 @@ El documento Markdown deberá contener el proceso técnico que el participante h
 
 ![image](https://user-images.githubusercontent.com/108036239/175609765-28faee4f-7110-4428-878a-78a493127f8b.png)
 
-## EJECUCION
+# EJECUCION
 
 Para el desarrollo y ejecución de lo solicitado se procede de la siguiente manera.
 
-### 1) Ingresar a Microsoft Azure
+## 1) Ingresar a Microsoft Azure
 
 Con la cuenta y password se ingresa al portal de Azure
 
 ![image](https://user-images.githubusercontent.com/108036239/175611085-e1c07681-092e-458b-adba-59921b2d8d44.png)
 
-### 2) Ingresar a Recursos
+## 2) Ingresar a Recursos
 
 En los recursos asignados ingresarse a synapsecapacitacion
 
 ![image](https://user-images.githubusercontent.com/108036239/175611437-b38a2e66-ac4d-4e48-82fe-dc5d1e44a758.png)
 
-### 3) Ingresar Synapse Studio
+## 3) Ingresar Synapse Studio
 
 Dentro del area de trabajo de synapse, abrimos Synapse Studio para el desarrollo de la solución.
 
 ![image](https://user-images.githubusercontent.com/108036239/175611964-59a8d72b-41df-4e46-824b-cca0e2f34689.png)
 
-### 4) Creación Servicio Vinculado
+## 4) Creación Servicio Vinculado
 
 Para crear un Servicio Vinculado ejecutamos los siguientes pasos:
 
@@ -75,7 +75,7 @@ e) Hacemos la prueba de la conexión
 
 ![image](https://user-images.githubusercontent.com/108036239/175616383-d301bd21-c9e3-4100-819a-102d2f7ce2a3.png)
 
-### 5) Creación Data Lake Storage
+## 5) Creación Data Lake Storage
 
 Para crear un Servicio Vinculado ejecutamos los siguientes pasos:
 
@@ -97,7 +97,7 @@ f) Probamos conexión.
 
 ![image](https://user-images.githubusercontent.com/108036239/175644660-52ef7df6-7ff7-4675-8144-4163d230cbee.png)
 
-### 6) Creación Origen de Datos 
+## 6) Creación Origen de Datos 
 
 a) Escogemos la opción datos
 
@@ -117,8 +117,7 @@ d) En este caso utilizaremos una creada previamente en el curso (SourceDataset_x
 
 ![image](https://user-images.githubusercontent.com/108036239/175697924-1b56b120-7e64-4149-a95b-2ac20d12eeeb.png)
 
-### 7) Creación Destino de Datos
-
+## 7) Creación Destino de Datos
 
 a) Escogemos la opción datos
 
@@ -138,11 +137,33 @@ e) Configuramos
 
 ![image](https://user-images.githubusercontent.com/108036239/175699013-213f26e6-5c5e-4068-a398-3888a7f9ef34.png)
 
-f) En este caso utilizaremos una creada previamente en el curso (DestinationDataset_xer) 
+f) En este caso utilizaremos una creada para el examen (DestinationDataset_examen) 
 
-![image](https://user-images.githubusercontent.com/108036239/175699343-a35894c1-ca59-4ed3-ab08-1d038889008d.png)
+![image](https://user-images.githubusercontent.com/108036239/175718588-813b42ea-a4d5-4ce4-99ab-a21850bc4ca4.png)
 
-![image](https://user-images.githubusercontent.com/108036239/175699286-d23ecff0-86a6-4b53-9009-1156433757b5.png)
+![image](https://user-images.githubusercontent.com/108036239/175719128-0d20ebc4-6106-46cc-8663-eb29c596cdb3.png)
+
+## 8) Creación Pipeline
+
+a) Creamos pipeline de acuerdo a los lineamientos generales
+
+b) Canalizaciones - Nueva Canalización
+
+![image](https://user-images.githubusercontent.com/108036239/175719429-27067369-26b9-483f-9af5-cf789e376fcd.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175719498-c8a30dd4-f7c9-41e8-96fd-00d065051b27.png)
+
+c) En la solución planteada se incluye lo siguiente :
+
+   1) Busqueda
+   2) ForEach
+   3) Block de Notas
+
+![image](https://user-images.githubusercontent.com/108036239/175719692-1f887985-f9f5-4f28-b362-4867ede6d65a.png)
+
+    ### Busqueda
+
+
 
 
 
