@@ -55,21 +55,27 @@ Dentro del area de trabajo de synapse, abrimos Synapse Studio para el desarrollo
 
 Para crear un Servicio Vinculado ejecutamos los siguientes pasos:
 
-1) Conexiones Externas
-2) Servicios Vinculados
-3) Nuevo
+a) Conexiones Externas
+b) Servicios Vinculados
+c) Nuevo
 
 ![image](https://user-images.githubusercontent.com/108036239/175614845-f501d9c9-17f5-405f-9be2-497e17c8cd40.png)
 
-4) Escogemos Mysql
+d) Escogemos Mysql
 
 ![image](https://user-images.githubusercontent.com/108036239/175614493-282b47ef-7c7c-4e59-b185-3f7ef2be917c.png)
 
-5) Para este caso vamos a utilizar el creado durante el curso
+d) Para este caso vamos a utilizar el creado durante el curso
 
 ![image](https://user-images.githubusercontent.com/108036239/175615130-661aa61b-8f17-4a6b-9a25-5277485d1d96.png)
 
 ![image](https://user-images.githubusercontent.com/108036239/175616067-172550c1-a3b6-4357-9c83-fcf65a82602f.png)
+
+e) Hacemos la prueba de la conexión
+
+![image](https://user-images.githubusercontent.com/108036239/175616383-d301bd21-c9e3-4100-819a-102d2f7ce2a3.png)
+
+
 
 
 
