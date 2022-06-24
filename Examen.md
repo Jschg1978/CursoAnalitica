@@ -217,6 +217,9 @@ En este caso se crearon dos para la carga archivo de clientes con correo electro
 
 ![image](https://user-images.githubusercontent.com/108036239/175723506-9cc24271-98f5-4036-be0f-ddb5c933ce92.png)
 
+![image](https://user-images.githubusercontent.com/108036239/175745352-c175a4e5-c79d-49a8-ae37-cc2352489cee.png)
+
+
 ```python
 %%pyspark
 from pyspark.sql import functions as F, Window
@@ -248,6 +251,11 @@ df.write.mode("overwrite").parquet(VpathEmail)
 
 ![image](https://user-images.githubusercontent.com/108036239/175736948-1ba76942-7be0-4c84-9081-cb3bb9226680.png)
 
+#### Notebook Resultado Final
+
+![image](https://user-images.githubusercontent.com/108036239/175745002-d8d74cf3-e732-4875-965a-8f5fee7f97cb.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175744786-df48a647-8251-48d3-af79-96d910088d0a.png)
 
 
 
