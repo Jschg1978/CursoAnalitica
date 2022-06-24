@@ -348,3 +348,9 @@ display(dfResFinal.limit(1000))
 ##Consumo
 dfResFinal.write.mode("overwrite").saveAsTable("default.tbl_jchicaiza_resfinal")
 ```
+5) Se consulta el resultado de la tabla final en el esquema default
+
+![image](https://user-images.githubusercontent.com/108036239/175748963-426a4a06-4941-4b48-a57d-6207a67c90a8.png)
+
+
+![image](https://user-images.githubusercontent.com/108036239/175749070-e11bec1b-f84d-4008-ad5f-32b4e71412e6.png)
