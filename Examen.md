@@ -204,6 +204,11 @@ Se parametriza el origen y destino de acuerdo creados en el apartado 6 y7
 
 ![image](https://user-images.githubusercontent.com/108036239/175721488-d13b6897-c1ba-4505-adf7-674fb2c74a4d.png)
 
+Resultado del copiado de tablas
+
+![image](https://user-images.githubusercontent.com/108036239/175741355-c0825a4b-1349-4d1a-b9b9-c400125a97c0.png)
+
+
 ### Notebook
 
 En este caso se crearon dos para la carga archivo de clientes con correo electronico en formato parquet y el otro para crear la tabla con los campos de salida.
@@ -240,6 +245,8 @@ VpathEmail = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse
 
 df.write.mode("overwrite").parquet(VpathEmail)
 ```
+
+![image](https://user-images.githubusercontent.com/108036239/175736948-1ba76942-7be0-4c84-9081-cb3bb9226680.png)
 
 
 
