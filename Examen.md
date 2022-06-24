@@ -97,6 +97,31 @@ f) Probamos conexión.
 
 ![image](https://user-images.githubusercontent.com/108036239/175644660-52ef7df6-7ff7-4675-8144-4163d230cbee.png)
 
+### 6) Creación Origen de Datos 
+
+a) Escogemos la opción datos
+
+b) Viculado
+
+c) Conjunto de datos de integración 
+
+![image](https://user-images.githubusercontent.com/108036239/175666002-0ae49f8d-1182-428d-8adb-3a4c379407b7.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175697652-f53854b3-8729-4831-9428-7e5fa0c37e79.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175697725-d67680b8-67dd-43a0-89a0-a819561a72d5.png)
+
+d) En este caso utilizaremos una creada previamente en el curso (SourceDataset_xer)
+
+![image](https://user-images.githubusercontent.com/108036239/175697875-191f1850-4362-4a3f-8447-72c2978d3c15.png)
+
+![image](https://user-images.githubusercontent.com/108036239/175697924-1b56b120-7e64-4149-a95b-2ac20d12eeeb.png)
+
+
+
+
+
+
 
 
 
