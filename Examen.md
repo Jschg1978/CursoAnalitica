@@ -186,9 +186,18 @@ table_schema = 'dwh'
 and table_name in('cliente','factura','facturaproducto','producto')
 ```
 
+### ForEach
 
-   
-   
+![image](https://user-images.githubusercontent.com/108036239/175721094-8e44c318-bb8a-474b-b27e-9f41c664751c.png)
+
+Se parametriza la pestaña configuración
+
+![image](https://user-images.githubusercontent.com/108036239/175721133-d77adf7e-c873-44cc-902e-36ed03f0ac4b.png)
+
+Dentro del ForEach incluimos la activdad Copiar datos
+
+![image](https://user-images.githubusercontent.com/108036239/175721192-6c5256cf-2ee1-4694-8e5e-79056e4410b3.png)
+
 
 
 
