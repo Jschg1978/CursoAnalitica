@@ -157,7 +157,7 @@ c) En la solución planteada se incluye lo siguiente :
 
    1) Busqueda
    2) ForEach
-   3) Block de Notas
+   3) Notebook
 
 ![image](https://user-images.githubusercontent.com/108036239/175719692-1f887985-f9f5-4f28-b362-4867ede6d65a.png)
 
@@ -203,6 +203,43 @@ Se parametriza el origen y destino de acuerdo creados en el apartado 6 y7
 ![image](https://user-images.githubusercontent.com/108036239/175721464-8b1547ec-b4c7-4f30-a2c1-5078a08a5853.png)
 
 ![image](https://user-images.githubusercontent.com/108036239/175721488-d13b6897-c1ba-4505-adf7-674fb2c74a4d.png)
+
+### Notebook
+
+En este caso se crearon dos para la carga archivo de clientes con correo electronico en formato parquet y el otro para crear la tabla con los campos de salida.
+
+#### Notebook Cargar Mail
+
+![image](https://user-images.githubusercontent.com/108036239/175723506-9cc24271-98f5-4036-be0f-ddb5c933ce92.png)
+
+```python
+%%pyspark
+from pyspark.sql import functions as F, Window
+from pyspark.sql.functions import explode
+
+## RutaArchivoCsvEmail
+
+Vpath = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/clientes_correos.csv'
+
+## If header exists uncomment line below
+##, header=True
+
+## LeerArchivoCSVConCabecera
+df = spark.read.csv(Vpath,header= True)
+
+display(df.limit(10))
+df.printSchema()
+
+## GuardarTablaFijaEsquemaDefault
+
+df.write.mode("overwrite").saveAsTable("default.tbl_email_jchicaiza")
+
+## GuardarArchivoTipoParquet
+
+VpathEmail = 'abfss://capacitacion@sesacapacitacion.dfs.core.windows.net/synapse/workspaces/synapsecapacitacion/warehouse/raw/jchicaiza/email.parquet'
+
+df.write.mode("overwrite").parquet(VpathEmail)
+```
 
 
 
