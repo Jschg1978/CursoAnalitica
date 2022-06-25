@@ -359,3 +359,6 @@ dfResFinal.write.mode("overwrite").saveAsTable("default.tbl_jchicaiza_resfinal")
 
 ![image](https://user-images.githubusercontent.com/108036239/175749327-0ec0502d-5a5d-48b9-b079-b82342735ecc.png)
 
+![image](https://user-images.githubusercontent.com/108036239/175749934-4c6ff046-8848-4f92-9225-ba4dde1a3e4c.png)
+
+
